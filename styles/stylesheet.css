@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.logo {
+  float: left; 
+  padding: 10px;
+  max-width: 100px;}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.header {
+  color: #523e33;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 48px;
+  line-height:36px;
+  padding: 30px 10px 0px 10px;
+}
+
+nav {
+ font-family: Helvetica Neue, Helvetica, Arial," sans-serif";
+ font-size: 12px;
+ line-height: 16px;
+ font-weight: bold;
+ color: #523e33; 
+ text-align: center;
+}
+
+.navbar {
+  background-color: #d6e8b8;
+}
+
+.nav_links {
+ font-family: Helvetica Neue, Helvetica, Arial," sans-serif";
+ font-size: 12px;
+ line-height: 16px;
+ font-weight: bold;
+ color: #ffffff; 
+ text-decoration: none;
+ background-color: #523e33;  
+ padding: 5px;
+}
+
+.nav_links:hover{
+  background-color: #d6e8b8;
+  color: #523e33; 
+  padding: 5px;
+}
+
+h2 {
+ font-family: Impact, Charcoal, sans-serif;
+ color: #523e33;
+}
+p {
+  font-family: Helvetica Neue, Helvetica, Arial," sans-serif";
+  color: #94877e;
+  font-size:13px;
+  line-height: 16px;
+}
+
+article {
+  padding: 0px 20px;
+}
+
+.policy {
+  background-color: #94c840;
+  color: #ffffff;
+  font-family: Helvetica Neue, Helvetica, Arial," sans-serif";
+  font-size:12px;
+  line-height: 14px;
+  padding:20px;
+}
+
+.fa {
+  color: #94c840;
+}
+
+.social {
+  float: left;
+}
+
+.footer_links {
+  color: #94c840;
+  font-family: Helvetica Neue, Helvetica, Arial," sans-serif";
+  font-size:12px;
+  line-height: 14px;
+}
+
+address {
+  float: right;
+}
+
+.home {
+  float: right;
+}
+
+.instructors_pics {
+  float: right;
+  padding: 10px;
+}
+
+.instructors {
+  border-bottom: 2px solid #94877e;
+  padding: 25px 0px;
+}
+
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF EIGHT  */
+.span_8_of_8 {
+	width: 100%;
+}
+
+.span_7_of_8 {
+  	width: 87.3%;
+}
+
+.span_6_of_8 {
+  	width: 74.6%;
+}
+
+.span_5_of_8 {
+  	width: 61.9%;
+}
+
+.span_4_of_8 {
+  	width: 49.2%;
+}
+
+.span_3_of_8 {
+  	width: 36.5%;
+}
+
+.span_2_of_8 {
+  	width: 23.8%;
+}
+
+.span_1_of_8 {
+  	width: 11.1%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_8, .span_2_of_8, .span_3_of_8, .span_4_of_8, .span_5_of_8, .span_6_of_8, .span_7_of_8, .span_8_of_8 { width: 100%; }
+}
+
+How It Works
+.section
+
+splits up the page horizontally. You'll need a few of these to break up the content, and you can use them in your main wrapper, or within other divs.
+.col
+
+divides the section into columns. Each column has a left margin except the first one. Using .col:first-child { margin-left: 0; } means you don't need to use class="last" anywhere. It works in all browsers since IE6.
+.group
+
+solves floating problems, by forcing the section to self clear its children (aka the clearfix hack). This is good in Firefox 3.5+, Safari 4+, Chrome, Opera 9+ and IE 6+.
+.span_1_of_3
+
+specifies the width of the column. Using percentages means it's 100% fluid.
+@media queries
+
+as soon as the screen size gets less than 480 pixels the columns stack and the margins disappear.
+
+
